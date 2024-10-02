@@ -759,6 +759,14 @@ video {
   padding-right: 1.25rem;
 }
 
+.pr-16 {
+  padding-right: 4rem;
+}
+
+.pl-16 {
+  padding-left: 4rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -785,6 +793,10 @@ video {
 
 .text-\[12px\] {
   font-size: 12px;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
 }
 
 .font-bold {
@@ -899,6 +911,10 @@ video {
 
   .lg\:w-\[100px\] {
     width: 100px;
+  }
+
+  .lg\:w-\[500px\] {
+    width: 500px;
   }
 
   .lg\:items-start {
