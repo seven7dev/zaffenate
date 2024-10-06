@@ -16,6 +16,15 @@
     box-sizing: border-box;
 }
 
+.bglg{
+  background-position: 0%;
+}
+
+
+.bgsm{
+  background-position: 70%;
+}
+
 .inter-400 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
