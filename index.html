@@ -8,8 +8,8 @@
 </head>
 <body class="flex flex-col">
 
-    <section class="h-[90vh] inter-400 bg-[url('../src/welding2.png')] bg-opacity-5 bg-no-repeat lg:bglg bgsm  bg-cover">
-        <div class="w-full h-9 bg-black bg-opacity-55 text-[10px] lg:text-[18px] flex gap-5 lg:gap-32 items-center inter-400 text-white justify-center lg:justify-between lg:pr-32 lg:pl-32">
+    <section class="h-[90vh] inter-400 bg-[url('../src/msg.jpeg')]  bg-top bg-opacity-5 bg-no-repeat lg:bglg bgsm  bg-cover">
+        <div class="w-full h-9 bg-black bg-opacity-100 text-[10px] lg:text-[18px] flex gap-5 lg:gap-32 items-center inter-400 text-white justify-center lg:justify-between lg:pr-32 lg:pl-32">
             <p class="text-yellow-400">(41) 99776-6152</p>
             <p class="text-yellow-400">zaffenatesoldas.contato@gmail.com</p>
         </div>
@@ -28,70 +28,56 @@
         <div class="flex justify-center items-center">
                 
              
-            <div class="bg-white flex items-center justify-center w-[600px] z-30 mt-[520px] rounded h-[100px]">
-                <a href="https://web.whatsapp.com/send?phone=5541997766152">
-                    <p class="text-center text-[#081366] font-bold text-3xl">FAÇA SEU ORÇAMENTO</p>
-                </a>
-            </div>
        
 
         </div>
         
     </section>
 
-    <section class="bg-[#081366] h-[40vh]">
-        <div class="w-full bg-white h-[80vh] mt-[380px] border-t-8 border-t-yellow-400">
+    <section class="">
+        <div class="w-full bg-white  border-t-8 border-t-yellow-400">
             <div class="flex lg:flex-row flex-col gap-2 items-center lg:gap-10 justify-center mt-[-330px] lg:mt-[0px]">
 
-                <div onclick="openPopup('popup1')" class="cursor-pointer w-[300px] flex-col p-2 lg:p-0 flex items-center justify-center rounded lg:h-[400px] bg-[#c0c0c0] border-8 border-yellow-400 lg:mt-[-150px] ">
-                    <p class="text-3xl font-bold text-[#112ae5] text-center">SOLDAS INDUSTRIAIS</p>
-                    <p>Clique para ver</p>
+                <div onclick="openPopup('popup1')" class="cursor-pointer flex-col w-[300px] flex items-center justify-center rounded p-2 lg:p-0 lg:h-[400px] bg-[url('../src/OIP.jfif')] bg-opacity-75 border-8 border-yellow-400 mt-10 ">
+                    <p class="text-3xl font-bold text-[yellow] text-center">SOLDAS INDUSTRIAIS</p>
+                    <p class="text-white">Clique para ver</p>
                 </div>
 
-                <div onclick="openPopup('popup2')" class="cursor-pointer flex-col w-[300px] flex items-center justify-center rounded p-2 lg:p-0 lg:h-[400px] bg-[#c0c0c0] border-8 border-yellow-400 lg:mt-[-150px] ">
-                    <p class="text-3xl font-bold text-[#112ae5]">SERRALHERIA</p>
-                    <p>Clique para ver</p>
+                <div class="lg:block hidden">
+                    <img src="./src/welding2.jpeg" class="w-[500px] h-[400px] mt-10 rounded">
+                </div>
+
+                <div onclick="openPopup('popup2')" class="cursor-pointer flex-col w-[300px] flex items-center justify-center rounded p-2 lg:p-0 lg:h-[400px] bg-[url('../src/OIP.jfif')] bg-opacity-75 border-8 border-yellow-400 mt-10 ">
+                    <p class="text-3xl font-bold text-[yellow] drop-shadow-lg shadow-black">SERRALHERIA</p>
+                    <p class="text-white">Clique para ver</p>
                 </div>
 
             </div>
            <div id="sobre" class="p-20 mt-24">
-                <p class="text-4xl font-bold text-[#112ae5] lg:text-left text-center">SOBRE NÓS</p>
-                <p class="text-2xl text-[#112ae5] lg:text-left text-center">A Zaffenate Soldas Especiais é uma empresa especializada em soluções de soldagem de alta precisão e qualidade. Com anos de experiência no mercado, nos dedicamos a atender as necessidades de nossos clientes com tecnologia de ponta e profissionais altamente capacitados. Nossa expertise abrange soldas especiais para os mais variados setores industriais, garantindo segurança, durabilidade e excelência em cada projeto. <br>Nossa missão é proporcionar soluções inovadoras que superem as expectativas dos nossos clientes, sempre com foco na eficiência, sustentabilidade e compromisso com a qualidade. Aqui na Zaffenate, a confiança e a satisfação dos nossos parceiros são o centro do nosso trabalho, e estamos sempre prontos para oferecer o melhor em soldagem técnica e personalizada.</p>
+                <p class="text-4xl font-bold text-[#112ae5] lg:text-left">SOBRE NÓS</p>
+                <p class="text-1xl text-[#112ae5] lg:text-left mt-2  lg:text-2xl">A <b>Zaffenate Soldas Especiais</b> é uma empresa especializada em soluções de soldagem de alta precisão e qualidade. Com anos de experiência no mercado, nos dedicamos a atender as necessidades de nossos clientes com tecnologia de ponta e profissionais altamente capacitados. Nossa expertise abrange soldas especiais para os mais variados setores industriais, garantindo segurança, durabilidade e excelência em cada projeto. <br>Nossa missão é proporcionar soluções inovadoras que superem as expectativas dos nossos clientes, sempre com foco na eficiência, sustentabilidade e compromisso com a qualidade. Aqui na Zaffenate, a confiança e a satisfação dos nossos parceiros são o centro do nosso trabalho, e estamos sempre prontos para oferecer o melhor em soldagem técnica e personalizada.</p>
            </div>
         </div>
         
         </div>
-        <div id="parcerias" class="pb-10 lg:pb-32 mt-[1000px] lg:mt-10">
+        <div id="parcerias" class="pb-10 lg:pb-32 mt-[140px] lg:mt-10">
             <div class="flex flex-col lg:flex-row gap-20 p-5 lg:pr-32 lg:pl-32">
                 <img src="./src/parcerias.jpeg" class="rounded-lg">
                 <div class="flex flex-col gap-3">
                     <p class="text-2xl font-bold text-center lg:text-left">Parcerias</p>
-                <p class="text-center lg:text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text-left lg:text-[20px] lg:text-left">"Na <b>Zaffenate Soldas Especiais</b>, acreditamos que parcerias sólidas impulsionam a inovação e o crescimento. Por isso, nos unimos a indústrias metalúrgicas de diferentes setores para oferecer soluções especializadas em soldagem que atendem às demandas mais rigorosas do mercado.
+
+Nossa expertise em soldas especiais, aliada a tecnologias de ponta, garante a execução de projetos de alta complexidade com precisão, eficiência e segurança. Trabalhamos lado a lado com nossos parceiros para desenvolver soluções personalizadas que aumentam a produtividade, reduzem custos operacionais e elevam o padrão de qualidade final.
+
+Benefícios da parceria com a <b>Zaffenate Soldas Especiais</b>:
+
+Qualidade certificada: Utilizamos materiais de soldagem de alta performance, sempre em conformidade com as normas nacionais e internacionais.
+Soluções personalizadas: Adaptamos nossos serviços às necessidades específicas de cada cliente, garantindo resultados otimizados para diferentes processos de fabricação.
+Inovação contínua: Investimos constantemente em tecnologia e treinamento de equipe, oferecendo aos nossos parceiros o que há de mais avançado em processos de soldagem.
+Atendimento especializado: Nossa equipe técnica está à disposição para prestar suporte completo, desde o planejamento até a execução final do projeto.
+Juntos, podemos superar desafios e criar novas oportunidades para o setor metalúrgico, com soluções que agregam valor em todas as etapas da cadeia produtiva. Se você busca um parceiro confiável e inovador, conte com a <b>Zaffenate Soldas Especiais</b> para transformar sua produção.
+
+Entre em contato conosco e saiba como podemos colaborar para o sucesso do seu negócio."</p>
                 </div>
             </div>
         </div>
@@ -99,8 +85,8 @@
         <footer class=" h-72  lg:mt-[0px] bg-[#ececec] w-full border-t border-t-[#b3b3b3]">
             <div class="flex">
              <div class="lg:m-24 flex flex-col ml-10 mt-20">
-               <p class="text-[#449bff] poppins-bold text-4xl">Zaffenate<span class="text-black"> Soldas Especiais</span></p>
-               <p class="text-black opacity-50 poppins-regular w-[330px]">Todos Direitos Reservados a Zaffenate Soldas Especiais © CNPJ 56.889.903/0001-20</p>
+               <p class="text-[#112ae5] poppins-bold text-4xl">Zaffenate<span class="text-black"> Soldas Especiais</span></p>
+               <p class="text-black opacity-50 poppins-regular w-[330px]">Todos Direitos Reservados a <b>Zaffenate Soldas Especiais</b> © CNPJ 56.889.903/0001-20</p>
            </div>
            <div class="lg:flex hidden">
                <div class="mt-32 flex gap-10">
@@ -166,8 +152,8 @@
 <img src="./src/serralheria (12).jpeg" alt="Imagem 12" class="w-full rounded-lg h-[300px] bg-cover">
 <img src="./src/serralheria (13).jpeg" alt="Imagem 13" class="w-full rounded-lg h-[300px] bg-cover">
 <img src="./src/serralheria (14).jpeg" alt="Imagem 14" class="w-full rounded-lg h-[300px] bg-cover">
-<img src="./src/welding2.png" alt="Imagem 15" class="w-full rounded-lg h-[300px] bg-cover">
-<img src="./src/welding.jpg" alt="Imagem 16" class="w-full rounded-lg h-[300px] bg-cover">
+<img src="./src/serralheria (15).jpeg" alt="Imagem 15" class="w-full rounded-lg h-[300px] bg-cover">
+<img src="./src/serralheria (16).jpeg" alt="Imagem 16" class="w-full rounded-lg h-[300px] bg-cover">
         </div>
         <button class="absolute top-2 right-2 text-gray-600" onclick="closePopup('popup2')">&times;</button>
     </div>
