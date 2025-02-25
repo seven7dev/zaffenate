@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.bg_{
+    background-image: url('./bg.png');
+}
+
+.shadowb{
+    box-shadow: 0px 0px 100px white;
+}

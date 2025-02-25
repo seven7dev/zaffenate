@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaffenate</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./input.css">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.3.0/dist/iconify-icon.min.js"></script>
+    <link rel="shortcut icon" href="./src/logo2.png" type="image/x-icon">
+</head>
+<body>
+    <section style="background-image: url(./src/bg.png); background-repeat: no-repeat; background-size: cover;" class="bg-[url('/src/bg.png')] h-[100vh]">
+        <!-- ===== Começo Header ===== -->
+        <header class="w-full h-max lg:h-[40px] bg-[#118CFF] flex lg:flex-row flex-col items-center lg:justify-between justify-center lg:pl-36 lg:pr-32">
+            <div class="flex items-center gap-2">
+                <iconify-icon icon="ic:baseline-whatsapp" width="28" height="28" style="color: #fefdfd"></iconify-icon>
+                <p class="text-white">(41) 9 9776-6152</p>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <iconify-icon icon="mdi:instagram" width="28" height="28"  style="color: #fefdfd"></iconify-icon>
+                <p class="text-white">@zaffenate.soldasespeciais</p>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <iconify-icon icon="ic:outline-email" width="28" height="28"  style="color: #fefdfd"></iconify-icon>
+                <p class="text-white">zaffenatesoldas.contato@gmail.com</p>
+            </div>
+        </header>
+        <!-- ===== Fim Header ===== -->
+
+        <!-- ===== Começo NavBar ===== -->
+        <nav id="1" class="w-full h-[100px] bg-white flex justify-between pl-36 pr-36 items-center">
+            <div class="flex justify-center items-center gap-6">
+                <img class="self-start" src="./src/logo.png" alt="Zaffenate">
+                <div class=" hidden lg:flex gap-5">
+                    <a href="#">Inicio</a>
+                    <a onclick="scrollToSection('2')" href="#">Serviços</a>
+                    <a onclick="scrollToSection('3')" href="#">Sobre Nós</a>
+                    <a href="https://wa.me/5541997766152" target="_blank" href="#">Contato</a>
+                </div>
+                <div class="flex lg:hidden md:hidden">
+                    <a href="https://wa.me/5541997766152" target="_blank" class="bg-[#118CFF] text-white p-2 rounded hover:brightness-95 transition-all">Faça um Orçamento</a>
+                </div>
+            </div>
+            <div class="lg:flex md:flex hidden">
+                <a href="https://wa.me/5541997766152" target="_blank" class="bg-[#118CFF] text-white p-2 rounded hover:brightness-95 transition-all">Faça um Orçamento</a>
+            </div>
+        </nav>
+        <!-- ===== Fim NavBar ===== -->
+
+        <!-- ===== Começo Content ===== -->
+
+        <div class="justify-center mt-5 lg:flex lg:flex-row flex-col lg:pr-32 lg:pl-32 lg:justify-between items-center lg:mt-48 p-6">
+            <div>
+                <div class="flex justify-center lg:justify-normal">
+                    <iconify-icon icon="material-symbols:star-rounded" width="28" height="28"  style="color: #f3a909"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star-rounded" width="28" height="28"  style="color: #f3a909"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star-rounded" width="28" height="28"  style="color: #f3a909"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star-rounded" width="28" height="28"  style="color: #f3a909"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star-rounded" width="28" height="28"  style="color: #f3a909"></iconify-icon>
+                </div>
+                <div>
+                    <p class="text-white font-bold text-4xl text-center lg:text-left">Mais de 28 Anos de Experiencia</p>
+                    <p class="lg:w-[500px] text-white text-[18px] opacity-90 text-center mt-3 lg:mt-0 lg:text-left">A <b>Zaffenate Soldas Especiais & Serralheria</b> está no ramo da soldagem e serralheria há <b>mais de 28 anos</b>, oferecendo soluções personalizadas e de alta qualidade para clientes residenciais, comerciais e industriais. Nossa missão é atender às necessidades dos nossos clientes com profissionalismo, eficiência e excelência técnica.</p>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-center mt-5 lg:justify-normal lg:mt-0">
+                    <img class="w-[200px] lg:w-max" src="./src/logo2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== Fim Content ===== -->
+    </section>
+    
+    <section>
+        <!-- ===== Começo Trabalho ===== -->
+        <div id="2" class="mt-10 flex justify-center text-center">
+            <p class="text-center w-[530px] text-2xl lg:p-0 p-3">Nossa Empresa é especializada em soldagem industrial, residencial, estruturas metalicas, inox, aluminio e serralheria em  geral.</p>
+        </div>
+        <div class="mt-10 flex flex-col justify-center text-center">
+            <p class="font-bold text-[20px]">Quer ver nosso trabalho?</p>
+            <p class="tracking-[6px] text-[16px] opacity-50">CLIQUE ABAIXO</p>
+        </div>
+
+        <div class="mt-20 lg:p-0 p-3">
+
+            <div class="flex flex-col justify-center items-center gap-10">
+
+                <div onclick="openModal(0)" class="h-max w-[300px] lg:w-[800px] bg-gradient-to-r from-[#0986f3] to-white border rounded flex p-5 cursor-pointer">
+                    <div class="flex">
+                        <img class="w-[190px] h-[165px] lg:block hidden" src="./src/1.png" alt="">
+                        <div class="ml-5 overflow-auto">
+                            <p class="text-[20px] font-bold tracking-[5px]">SOLDAGEM INDUSTRIAL</p>
+                            <p class="text-[16px] overflow-auto">A Zaffenate Soldas Especiais & Serralheria atua no segmento de soldagem industrial com foco em precisão, segurança e durabilidade. Oferecemos soluções personalizadas para indústrias de diversos setores, utilizando técnicas avançadas de soldagem TIG, MIG e eletrodo revestido.</p>
+                            <p class="text-[18px] font-bold mt-3">Clique para ver nossa soldagem industrial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="openModal(1)" class="h-max w-[300px] lg:w-[800px] bg-gradient-to-r from-[#0986f3] to-white border rounded flex p-5 cursor-pointer">
+                    <div class="flex">
+                        <img class="w-[190px] h-[165px] lg:block hidden" src="./src/2.png" alt="">
+                        <div class="ml-5 overflow-auto">
+                            <p class="text-[20px] font-bold tracking-[5px]">SERRALHERIA</p>
+                            <p class="text-[15px] overflow-auto">A Zaffenate Soldas Especiais & Serralheria oferece serviços completos em serralheria personalizada, desenvolvendo soluções sob medida para projetos residenciais, comerciais e industriais. Produzimos portões, grades, corrimãos, estruturas metálicas, mezaninos e outros itens em metal, unindo funcionalidade, estética e segurança.</p>
+                            <p class="text-[18px] font-bold mt-4">Clique para ver nossa soldagem industrial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="popup" class="fixed inset-0 bg-[rgba(0,0,0,0.5)] bg-opacity-50 hidden flex justify-center items-center p-5">
+                    <div class="bg-white p-5 rounded-lg max-w-3xl w-full shadow-lg relative flex flex-col items-center">
+                        <button onclick="closeModal()" class="absolute top-2 right-2 text-xl">&times;</button>
+                        <h2 id="popup-title" class="text-xl font-bold text-center mb-4"></h2>
+                        <div class="relative w-full flex justify-center items-center">
+                            <button onclick="prevImage()" class="absolute left-0 text-3xl bg-gray-300 px-3 py-1 ml-1 rounded"><</button>
+                            <img id="popup-image" class="w-full h-auto rounded max-h-[400px]">
+                            <button onclick="nextImage()" class="absolute right-0 text-3xl bg-gray-300 px-3 py-1 mr-1 rounded">></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== Fim Trabalho ===== -->
+
+                <div class="mt-10 flex gap-2">
+                    <a href="https://wa.me/5541997766152" target="_blank" class="bg-[#118CFF] text-white p-2 rounded hover:brightness-95 transition-all">Faça um Orçamento</a>
+                    <a href="https://wa.me/5541997766152" target="_blank" class="bg-[#1a7b43] text-white p-2 rounded hover:brightness-95 transition-all flex gap-2 items-center"><iconify-icon icon="ic:baseline-whatsapp" width="28" height="28" style="color: #fefdfd"></iconify-icon> Whatsapp</a>
+                </div>
+
+                <!-- ===== Começo Sobre ===== -->
+
+                    <div id="3" class="mt-20">
+
+                        <div class="flex lg:flex-row flex-col gap-10 lg:p-10 justify-center items-center lg:items-start lg:justify-normal">
+                            <img src="./src/four.png" class="lg:w-[400px] w-[300px]" alt="">
+                            
+                            <div class="flex flex-col lg:text-left text-center">
+
+                                <p class="text-3xl font-bold">Sobre a <span class="underline">Zaffenate</span></p>
+                                <p class="lg:w-[800px] mt-20">A Zaffenate Soldas Especiais & Serralheria é uma empresa especializada em soluções metálicas de alta qualidade, atendendo clientes dos setores residencial, comercial e industrial. Com anos de experiência no mercado, nos destacamos pela excelência em soldagem especial e serralheria personalizada, sempre priorizando precisão, segurança e durabilidade.
+                                    Nosso portfólio inclui desde pequenos reparos até grandes projetos estruturais, com foco em atender às necessidades específicas de cada cliente. Utilizamos técnicas avançadas, como solda TIG, MIG e eletrodo revestido, além de trabalhar com materiais como aço inox, alumínio e aço carbono, garantindo resistência e acabamento impecável.
+                                    Na Zaffenate, acreditamos que cada projeto é único. Por isso, oferecemos um atendimento personalizado, acompanhamento técnico especializado e compromisso com prazos e qualidade. Seja para fabricar, instalar ou realizar manutenções, nossa equipe está pronta para entregar soluções que combinam inovação, estética e funcionalidade.</p>
+                                <p class="font-bold mt-20">“Zaffenate Soldas Especiais & Serralheria – Transformando ideias em estruturas metálicas sólidas e confiáveis!”</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                <!-- ===== Fim Sobre ===== -->
+
+                <div class="mt-10 flex gap-2">
+                    <a href="https://wa.me/5541997766152" target="_blank" class="bg-[#118CFF] text-white p-2 rounded hover:brightness-95 transition-all">Faça um Orçamento</a>
+                    <a href="https://wa.me/5541997766152" target="_blank" class="bg-[#1a7b43] text-white p-2 rounded hover:brightness-95 transition-all flex gap-2 items-center"><iconify-icon icon="ic:baseline-whatsapp" width="28" height="28" style="color: #fefdfd"></iconify-icon> Whatsapp</a>
+                </div>
+
+                <!-- ===== Começo Local ===== -->
+
+                <div class="bg-[#d5d5d5] w-full h-max p-5">
+
+                    <div class="p-3 flex lg:flex-row flex-col items-center text-center lg:items-start lg:text-left gap-2">
+                        <img src="./src/logo2.png" width="200px" alt="Zaffenate">
+                        <div class="items-center mt-10">
+                            <p class="text-2xl">Zaffenate Soldas Especiais</p>
+                            <p class="w-[250px] font-bold opacity-50">Todos direitos reservados a CNPJ 56.889.903/0001-20</p>
+                        </div>
+                    </div>
+                    
+                <!-- ===== Fim Local ===== -->
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const items = [
+            {
+                title: "SOLDAGEM INDUSTRIAL",
+                gallery: Array.from({ length: 18 }, (_, i) => `./src/industrial/${i + 1}.jpeg`)
+            },
+            {
+                title: "SERRALHERIA",
+                gallery: Array.from({ length: 12 }, (_, i) => `./src/serralheria/${i + 1}.jpeg`)
+            }
+        ];
+        
+        let currentGallery = [];
+        let currentIndex = 0;
+
+        function openModal(index) {
+            document.getElementById("popup-title").innerText = items[index].title;
+            currentGallery = items[index].gallery;
+            currentIndex = 0;
+            document.getElementById("popup-image").src = currentGallery[currentIndex];
+            document.getElementById("popup").classList.remove("hidden");
+        }
+
+        function closeModal() {
+            document.getElementById("popup").classList.add("hidden");
+        }
+
+        function prevImage() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                document.getElementById("popup-image").src = currentGallery[currentIndex];
+            }
+        }
+
+        function nextImage() {
+            if (currentIndex < currentGallery.length - 1) {
+                currentIndex++;
+                document.getElementById("popup-image").src = currentGallery[currentIndex];
+            }
+        }
+
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+</body>
+</html>
