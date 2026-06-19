@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Zaffenate | Soldas Especiais e Soldagem Industrial há 28+ Anos</title>
-    <meta name="description" content="Soldas especiais e soldagem industrial em inox, alumínio e aço carbono. Mais de 28 anos de experiência em solda TIG, MIG e serralheria sob medida. Peça seu orçamento.">
-    <meta name="keywords" content="solda especial, soldagem industrial, solda inox, solda alumínio, solda TIG, solda MIG, serralheria, estruturas metálicas, Zaffenate">
+    <meta name="description"
+        content="Soldas especiais e soldagem industrial em inox, alumínio e aço carbono. Mais de 28 anos de experiência em solda TIG, MIG e serralheria sob medida. Peça seu orçamento.">
+    <meta name="keywords"
+        content="solda especial, soldagem industrial, solda inox, solda alumínio, solda TIG, solda MIG, serralheria, estruturas metálicas, Zaffenate">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Zaffenate Soldas Especiais & Serralheria">
     <meta name="theme-color" content="#118CFF">
     <link rel="canonical" href="https://www.zaffenate.com.br/">
 
-    <!-- Open Graph / Redes Sociais -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Zaffenate Soldas Especiais & Serralheria">
     <meta property="og:title" content="Zaffenate | Soldas Especiais e Soldagem Industrial há 28+ Anos">
-    <meta property="og:description" content="Soldas especiais e soldagem industrial em inox, alumínio e aço carbono. Mais de 28 anos de experiência em solda TIG, MIG e serralheria sob medida.">
+    <meta property="og:description"
+        content="Soldas especiais e soldagem industrial em inox, alumínio e aço carbono. Mais de 28 anos de experiência em solda TIG, MIG e serralheria sob medida.">
     <meta property="og:url" content="https://www.zaffenate.com.br/">
     <meta property="og:image" content="https://www.zaffenate.com.br/src/bg.webp">
     <meta property="og:locale" content="pt_BR">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Zaffenate | Soldas Especiais e Soldagem Industrial há 28+ Anos">
-    <meta name="twitter:description" content="Soldas especiais e soldagem industrial em inox, alumínio e aço carbono. Mais de 28 anos de experiência em solda TIG, MIG e serralheria sob medida.">
+    <meta name="twitter:description"
+        content="Soldas especiais e soldagem industrial em inox, alumínio e aço carbono. Mais de 28 anos de experiência em solda TIG, MIG e serralheria sob medida.">
     <meta name="twitter:image" content="https://www.zaffenate.com.br/src/bg.webp">
 
-    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.3.0/dist/iconify-icon.min.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+
     <link rel="shortcut icon" href="./src/logo2.png" type="image/png">
     <link rel="apple-touch-icon" href="./src/logo2.png">
 
-    <!-- ===== Dados Estruturados (Schema.org) =====
-         Preencha addressLocality e areaServed com a cidade/região real de atendimento
-         antes de publicar, para que o Google associe corretamente o negócio local. -->
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Animação para o botão de whatsapp flutuante pulsar levemente */
+        @keyframes float-pulse {
+            0% {
+                transform: scale(1) translateY(0px);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            50% {
+                transform: scale(1.05) translateY(-5px);
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                transform: scale(1) translateY(0px);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        .whatsapp-float {
+            animation: float-pulse 3s infinite;
+        }
+
+        /* Classe para transição suave de fundo do banner */
+        .bg-fade-transition {
+            transition: background-image 1.5s ease-in-out;
+        }
+    </style>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -56,7 +97,7 @@
             "addressRegion": "PR",
             "addressCountry": "BR"
           },
-          "areaServed": ["Curitiba", "Fazenda Rio Grande", "São José dos Pinhais", "Araucária", "Mandirituba"]
+          "areaServed": ["Curitiba", "Fazenda Rio Grande", "São José dos Pinhais", "Araucária", "Mandirituba"],
           "sameAs": [
             "https://www.instagram.com/zaffenate.soldasespeciais"
           ],
@@ -75,355 +116,424 @@
           "url": "https://www.zaffenate.com.br/",
           "name": "Zaffenate Soldas Especiais & Serralheria",
           "inLanguage": "pt-BR"
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Qual a diferença entre solda MIG e solda TIG?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "A solda MIG usa um arame contínuo como eletrodo e é mais rápida, indicada para grandes volumes e aço carbono. Já a solda TIG utiliza um eletrodo de tungstênio e oferece acabamento mais preciso e limpo, sendo ideal para aço inox, alumínio e peças que exigem alta qualidade estética e estrutural."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "O que é soldagem industrial e quando ela é necessária?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Soldagem industrial é a união de peças metálicas com técnicas e equipamentos voltados para a indústria, garantindo resistência, segurança e durabilidade. É necessária em estruturas metálicas, máquinas, equipamentos, tubulações e qualquer projeto que exija solda especializada dentro de normas técnicas."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "A Zaffenate trabalha com quais materiais?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Trabalhamos com aço inox, alumínio e aço carbono, aplicando as técnicas de solda TIG, MIG e eletrodo revestido conforme a necessidade de cada projeto, residencial, comercial ou industrial."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "A Zaffenate faz soldas especiais para indústrias?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim. A soldagem especial e industrial é uma das principais especialidades da Zaffenate, com foco em precisão, segurança e durabilidade para atender diferentes setores industriais."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "É possível soldar alumínio e aço inox sem perder a resistência da peça?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim, desde que a solda seja feita com a técnica correta, geralmente TIG, e por profissionais experientes. Isso evita deformações, trincas e perda de resistência mecânica do material."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Quanto tempo leva para receber um orçamento de solda ou serralheria?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "O prazo varia conforme a complexidade do projeto. Entre em contato pelo WhatsApp com fotos e detalhes do serviço para recebermos um orçamento rápido e personalizado."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "A Zaffenate atende projetos residenciais e comerciais, além de industriais?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim. Além da soldagem industrial e especial, atendemos projetos residenciais e comerciais de serralheria, como portões, grades, corrimãos e estruturas metálicas."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Como solicitar um orçamento com a Zaffenate?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Basta entrar em contato pelo WhatsApp (41) 9 9776-6152 ou pelo e-mail zaffenatesoldas.contato@gmail.com com as informações do seu projeto."
-              }
-            }
-          ]
         }
       ]
     }
     </script>
 </head>
-<body>
-    <section style="background-image: url(./src/bg.webp); background-repeat: no-repeat; background-size: cover;" class="h-[100vh]">
-        <!-- ===== Começo Header ===== -->
-        <header class="w-full h-max lg:h-[40px] bg-[#118CFF] flex lg:flex-row flex-col items-center lg:justify-between justify-center lg:pl-36 lg:pr-32">
-            <a href="https://wa.me/5541997766152" target="_blank" rel="noopener" class="flex items-center gap-2">
-                <iconify-icon icon="ic:baseline-whatsapp" width="28" height="28" style="color: #fefdfd"></iconify-icon>
-                <p class="text-white">(41) 9 9776-6152</p>
-            </a>
 
-            <a href="https://www.instagram.com/zaffenate.soldasespeciais" target="_blank" rel="noopener" class="flex items-center gap-2">
-                <iconify-icon icon="mdi:instagram" width="28" height="28"  style="color: #fefdfd"></iconify-icon>
-                <p class="text-white">@zaffenate.soldasespeciais</p>
-            </a>
+<body class="relative">
 
-            <a href="mailto:zaffenatesoldas.contato@gmail.com" class="flex items-center gap-2">
-                <iconify-icon icon="ic:outline-email" width="28" height="28"  style="color: #fefdfd"></iconify-icon>
-                <p class="text-white">zaffenatesoldas.contato@gmail.com</p>
-            </a>
-        </header>
-        <!-- ===== Fim Header ===== -->
+    <a href="https://wa.me/5541997766152" target="_blank" rel="noopener"
+        class="whatsapp-float fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex justify-center items-center shadow-xl z-50 hover:bg-[#1ebe5d] transition-colors"
+        aria-label="Fale conosco no WhatsApp">
+        <iconify-icon icon="ic:baseline-whatsapp" width="36" height="36"></iconify-icon>
+    </a>
 
-        <!-- ===== Começo NavBar ===== -->
-        <nav id="1" class="w-full h-[100px] bg-white flex justify-between pl-36 pr-36 items-center">
-            <div class="flex justify-center items-center gap-6">
-                <img class="self-start" src="./src/logo.webp" width="73" height="73" alt="Logo Zaffenate Soldas Especiais & Serralheria">
-                <div class=" hidden lg:flex gap-5">
-                    <a href="#">Inicio</a>
-                    <a onclick="scrollToSection('2')" href="#">Serviços</a>
-                    <a onclick="scrollToSection('3')" href="#">Sobre Nós</a>
-                    <a onclick="scrollToSection('4')" href="#">Avaliações</a>
-                    <a onclick="scrollToSection('5')" href="#">FAQ</a>
-                    <a href="https://wa.me/5541997766152" target="_blank" rel="noopener">Contato</a>
+    <section id="hero-section" class="bg-fade-transition relative lg:pb-32"
+        style="background-image: url('./src/bg.webp'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+
+        <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+        <div class="relative z-10">
+            <header
+                class="w-full h-max lg:h-[40px] bg-[#118CFF] flex lg:flex-row flex-col items-center lg:justify-between justify-center lg:pl-36 lg:pr-32 py-2 lg:py-0 transition-all">
+                <a href="https://wa.me/5541997766152" target="_blank" rel="noopener"
+                    class="flex items-center gap-2 hover:scale-105 transition-transform">
+                    <iconify-icon icon="ic:baseline-whatsapp" width="28" height="28"
+                        style="color: #fefdfd"></iconify-icon>
+                    <p class="text-white font-medium">(41) 9 9776-6152</p>
+                </a>
+
+                <a href="https://www.instagram.com/zaffenate.soldasespeciais" target="_blank" rel="noopener"
+                    class="flex items-center gap-2 hover:scale-105 transition-transform mt-2 lg:mt-0">
+                    <iconify-icon icon="mdi:instagram" width="28" height="28" style="color: #fefdfd"></iconify-icon>
+                    <p class="text-white font-medium">@zaffenate.soldasespeciais</p>
+                </a>
+
+                <a href="mailto:zaffenatesoldas.contato@gmail.com"
+                    class="flex items-center gap-2 hover:scale-105 transition-transform mt-2 lg:mt-0">
+                    <iconify-icon icon="ic:outline-email" width="28" height="28" style="color: #fefdfd"></iconify-icon>
+                    <p class="text-white font-medium">zaffenatesoldas.contato@gmail.com</p>
+                </a>
+            </header>
+            <nav id="1"
+                class="w-full h-[100px] bg-white shadow-md flex justify-center lg:justify-between lg:pl-36 lg:pr-36 items-center sticky top-0 z-40">
+                <div class="flex justify-center items-center gap-6">
+                    <img class="self-start" src="./src/logo.webp" width="73" height="73"
+                        alt="Logo Zaffenate Soldas Especiais & Serralheria">
+                    <div class="hidden lg:flex gap-5 font-semibold text-gray-700">
+                        <a href="#" class="hover:text-[#118CFF] transition-colors">Inicio</a>
+                        <a onclick="scrollToSection('2')" href="#"
+                            class="hover:text-[#118CFF] transition-colors">Serviços</a>
+                        <a onclick="scrollToSection('3')" href="#" class="hover:text-[#118CFF] transition-colors">Sobre
+                            Nós</a>
+                        <a onclick="scrollToSection('4')" href="#"
+                            class="hover:text-[#118CFF] transition-colors">Avaliações</a>
+                        <a onclick="scrollToSection('5')" href="#"
+                            class="hover:text-[#118CFF] transition-colors">FAQ</a>
+                        <a href="https://wa.me/5541997766152" target="_blank" rel="noopener"
+                            class="hover:text-[#118CFF] transition-colors">Contato</a>
+                    </div>
                 </div>
-                <div class="flex lg:hidden md:hidden">
-                    <a href="https://wa.me/5541997766152" target="_blank" rel="noopener" class="bg-[#118CFF] text-white p-2 rounded hover:brightness-95 transition-all">Faça um Orçamento</a>
+                <div class="flex ml-5">
+                    <a href="https://wa.me/5541997766152" target="_blank" rel="noopener"
+                        class="bg-[#118CFF] text-white font-bold px-5 py-2 rounded-lg shadow-lg hover:bg-[#0a72d4] hover:shadow-xl transition-all">Faça
+                        um Orçamento</a>
                 </div>
-            </div>
-            <div class="lg:flex md:flex hidden">
-                <a href="https://wa.me/5541997766152" target="_blank" rel="noopener" class="bg-[#118CFF] text-white p-2 rounded hover:brightness-95 transition-all">Faça um Orçamento</a>
-            </div>
-        </nav>
-        <!-- ===== Fim NavBar ===== -->
-
-        <!-- ===== Começo Content ===== -->
-
-        <div class="justify-center mt-5 lg:flex lg:flex-row flex-col lg:pr-32 lg:pl-32 lg:justify-between items-center lg:mt-48 p-6">
-            <div>
-                <div class="flex justify-center lg:justify-normal" role="img" aria-label="Avaliação 5 de 5 estrelas">
-                    <iconify-icon icon="material-symbols:star-rounded" width="28" height="28"  style="color: #f3a909"></iconify-icon>
-                    <iconify-icon icon="material-symbols:star-rounded" width="28" height="28"  style="color: #f3a909"></iconify-icon>
-                    <iconify-icon icon="material-symbols:star-rounded" width="28" height="28"  style="color: #f3a909"></iconify-icon>
-                    <iconify-icon icon="material-symbols:star-rounded" width="28" height="28"  style="color: #f3a909"></iconify-icon>
-                    <iconify-icon icon="material-symbols:star-rounded" width="28" height="28"  style="color: #f3a909"></iconify-icon>
+            </nav>
+            <div
+                class="justify-center mt-5 lg:flex lg:flex-row flex-col lg:pr-32 lg:pl-32 lg:justify-between items-center lg:mt-32 p-6 drop-shadow-lg">
+                <div class="animate-fade-in-up">
+                    <div class="flex justify-center lg:justify-normal" role="img"
+                        aria-label="Avaliação 5 de 5 estrelas">
+                        <iconify-icon icon="material-symbols:star-rounded" width="32" height="32"
+                            style="color: #f3a909"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-rounded" width="32" height="32"
+                            style="color: #f3a909"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-rounded" width="32" height="32"
+                            style="color: #f3a909"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-rounded" width="32" height="32"
+                            style="color: #f3a909"></iconify-icon>
+                        <iconify-icon icon="material-symbols:star-rounded" width="32" height="32"
+                            style="color: #f3a909"></iconify-icon>
+                    </div>
+                    <div>
+                        <h1
+                            class="text-white font-bold text-4xl lg:text-5xl text-center lg:text-left lg:w-[600px] mt-2 leading-tight">
+                            Soldas Especiais e Soldagem Industrial com Mais de 28 Anos</h1>
+                        <p
+                            class="lg:w-[550px] text-white text-[18px] opacity-95 text-center mt-4 lg:mt-2 lg:text-left font-medium">
+                            A <b>Zaffenate Soldas Especiais & Serralheria</b> é especializada em <b>soldagem industrial
+                                e soldas especiais</b> (TIG, MIG e eletrodo revestido) em inox, alumínio e aço carbono,
+                            atendendo clientes residenciais, comerciais e industriais com excelência técnica.</p>
+                    </div>
                 </div>
                 <div>
-                    <h1 class="text-white font-bold text-4xl text-center lg:text-left lg:w-[500px]">Soldas Especiais e Soldagem Industrial com Mais de 28 Anos</h1>
-                    <p class="lg:w-[500px] text-white text-[18px] opacity-90 text-center mt-3 lg:mt-0 lg:text-left">A <b>Zaffenate Soldas Especiais & Serralheria</b> é especializada em <b>soldagem industrial e soldas especiais</b> (TIG, MIG e eletrodo revestido) em inox, alumínio e aço carbono, com <b>mais de 28 anos de experiência</b> atendendo clientes residenciais, comerciais e industriais com profissionalismo, eficiência e excelência técnica.</p>
-                </div>
-            </div>
-            <div>
-                <div class="flex justify-center mt-5 lg:justify-normal lg:mt-0">
-                    <img class="w-[200px] lg:w-max" src="./src/logo2.webp" width="330" height="330" alt="Selo Zaffenate Soldas Especiais & Serralheria">
+                    <div class="flex justify-center mt-5 hidden lg:block lg:justify-normal lg:mt-0">
+                        <img class="w-[250px] lg:w-max drop-shadow-2xl" src="./src/logo2.webp" width="330" height="330"
+                            alt="Selo Zaffenate Soldas Especiais & Serralheria">
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- ===== Fim Content ===== -->
     </section>
 
-    <main>
-    <section>
-        <!-- ===== Começo Trabalho ===== -->
-        <div id="2" class="mt-10 flex justify-center text-center">
-            <h2 class="text-center w-[530px] text-2xl lg:p-0 p-3 font-normal">Nossa empresa é especializada em soldagem industrial, soldas especiais, estruturas metálicas, inox, alumínio e serralheria em geral.</h2>
-        </div>
-        <div class="mt-10 flex flex-col justify-center text-center">
-            <h3 class="font-bold text-[20px]">Quer ver nosso trabalho?</h3>
-            <p class="tracking-[6px] text-[16px] opacity-50">CLIQUE ABAIXO</p>
-        </div>
+    <main class="overflow-hidden">
+        <section>
+            <div id="2" class="mt-16 flex justify-center text-center px-4">
+                <h2 class="text-center max-w-3xl text-1xl lg:text-2xl font-medium leading-relaxed">Nossa empresa é
+                    especializada em soldagem industrial, soldas especiais, estruturas metálicas, inox, alumínio e
+                    serralheria em geral.</h2>
+            </div>
+            <div class="mt-12 flex flex-col justify-center text-center">
+                <h3 class="font-bold text-2xl text-gray-800">Quer ver nosso trabalho?</h3>
+                <p class="tracking-[6px] text-sm opacity-60 mt-1 font-semibold text-[#118CFF]">CLIQUE ABAIXO</p>
+            </div>
 
-        <div class="mt-20 lg:p-0 p-3">
+            <div class="mt-16 lg:p-0 p-4">
+                <div class="flex flex-col justify-center items-center gap-10">
 
-            <div class="flex flex-col justify-center items-center gap-10">
-
-                <div onclick="openModal(0)" class="h-max w-[300px] lg:w-[800px] bg-gradient-to-r from-[#0986f3] to-white border rounded flex p-5 cursor-pointer">
-                    <div class="flex">
-                        <img class="w-[190px] h-[165px] lg:block hidden" src="./src/1.webp" width="265" height="252" alt="Soldagem industrial especial em peça metálica" loading="lazy">
-                        <div class="ml-5 overflow-auto">
-                            <h3 class="text-[20px] font-bold tracking-[5px]">SOLDAGEM INDUSTRIAL</h3>
-                            <p class="text-[16px] overflow-auto">A Zaffenate Soldas Especiais & Serralheria atua no segmento de soldagem industrial com foco em precisão, segurança e durabilidade. Oferecemos soluções personalizadas para indústrias de diversos setores, utilizando técnicas avançadas de soldagem TIG, MIG e eletrodo revestido.</p>
-                            <p class="text-[18px] font-bold mt-3">Clique para ver nossa soldagem industrial</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div onclick="openModal(1)" class="h-max w-[300px] lg:w-[800px] bg-gradient-to-r from-[#0986f3] to-white border rounded flex p-5 cursor-pointer">
-                    <div class="flex">
-                        <img class="w-[190px] h-[165px] lg:block hidden" src="./src/2.webp" width="266" height="252" alt="Serralheria personalizada Zaffenate" loading="lazy">
-                        <div class="ml-5 overflow-auto">
-                            <h3 class="text-[20px] font-bold tracking-[5px]">SERRALHERIA</h3>
-                            <p class="text-[15px] overflow-auto">A Zaffenate Soldas Especiais & Serralheria oferece serviços completos em serralheria personalizada, desenvolvendo soluções sob medida para projetos residenciais, comerciais e industriais. Produzimos portões, grades, corrimãos, estruturas metálicas, mezaninos e outros itens em metal, unindo funcionalidade, estética e segurança.</p>
-                            <p class="text-[18px] font-bold mt-4">Clique para ver nossa serralheria</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popup" class="fixed inset-0 bg-[rgba(0,0,0,0.5)] bg-opacity-50 hidden flex justify-center items-center p-5">
-                    <div class="bg-white p-5 rounded-lg max-w-3xl w-full shadow-lg relative flex flex-col items-center">
-                        <button onclick="closeModal()" class="absolute top-2 right-2 text-xl" aria-label="Fechar galeria">&times;</button>
-                        <h2 id="popup-title" class="text-xl font-bold text-center mb-4"></h2>
-                        <div class="relative w-full flex justify-center items-center">
-                            <button onclick="prevImage()" class="absolute left-0 text-3xl bg-gray-300 px-3 py-1 ml-1 rounded" aria-label="Foto anterior"><</button>
-                            <img id="popup-image" class=" h-auto rounded max-h-[400px]" alt="Foto do trabalho realizado pela Zaffenate">
-                            <button onclick="nextImage()" class="absolute right-0 text-3xl bg-gray-300 px-3 py-1 mr-1 rounded" aria-label="Próxima foto">></button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ===== Fim Trabalho ===== -->
-
-                <div class="mt-10 flex gap-2">
-                    <a href="https://wa.me/5541997766152" target="_blank" rel="noopener" class="bg-[#118CFF] text-white p-2 rounded hover:brightness-95 transition-all">Faça um Orçamento</a>
-                    <a href="https://wa.me/5541997766152" target="_blank" rel="noopener" class="bg-[#1a7b43] text-white p-2 rounded hover:brightness-95 transition-all flex gap-2 items-center"><iconify-icon icon="ic:baseline-whatsapp" width="28" height="28" style="color: #fefdfd"></iconify-icon> Whatsapp</a>
-                </div>
-
-                <!-- ===== Começo Sobre ===== -->
-
-                    <div id="3" class="mt-20">
-
-                        <div class="flex lg:flex-row flex-col gap-10 lg:p-10 justify-center items-center lg:items-start lg:justify-normal">
-                            <img src="./src/four.webp" width="701" height="673" class="lg:w-[400px] w-[300px]" alt="Estrutura metálica produzida pela Zaffenate Soldas Especiais & Serralheria" loading="lazy">
-
-                            <div class="flex flex-col lg:text-left text-center">
-
-                                <h2 class="text-3xl font-bold">Sobre a <span class="underline">Zaffenate</span></h2>
-                                <p class="lg:w-[800px] mt-20">A Zaffenate Soldas Especiais & Serralheria é uma empresa especializada em soluções metálicas de alta qualidade, atendendo clientes dos setores residencial, comercial e industrial. Com anos de experiência no mercado, nos destacamos pela excelência em soldagem especial e serralheria personalizada, sempre priorizando precisão, segurança e durabilidade.
-                                    Nosso portfólio inclui desde pequenos reparos até grandes projetos estruturais, com foco em atender às necessidades específicas de cada cliente. Utilizamos técnicas avançadas, como solda TIG, MIG e eletrodo revestido, além de trabalhar com materiais como aço inox, alumínio e aço carbono, garantindo resistência e acabamento impecável.
-                                    Na Zaffenate, acreditamos que cada projeto é único. Por isso, oferecemos um atendimento personalizado, acompanhamento técnico especializado e compromisso com prazos e qualidade. Seja para fabricar, instalar ou realizar manutenções, nossa equipe está pronta para entregar soluções que combinam inovação, estética e funcionalidade.</p>
-                                <blockquote class="font-bold mt-20">"Zaffenate Soldas Especiais & Serralheria – Transformando ideias em estruturas metálicas sólidas e confiáveis!"</blockquote>
+                    <div onclick="openModal(0)"
+                        class="group h-max w-full max-w-[800px] bg-gradient-to-r from-[#0986f3] to-white border border-gray-200 rounded-xl flex p-6 cursor-pointer shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex items-center">
+                            <img class="w-[200px] h-[170px] object-cover rounded-lg shadow-md lg:block hidden group-hover:scale-105 transition-transform duration-300"
+                                src="./src/1.webp" width="265" height="252"
+                                alt="Soldagem industrial especial em peça metálica" loading="lazy">
+                            <div class="lg:ml-8 overflow-auto">
+                                <h3 class="text-xl lg:text-2xl font-black tracking-[3px] text-gray-900 drop-shadow-sm">
+                                    SOLDAGEM INDUSTRIAL</h3>
+                                <p class="text-base text-gray-800 mt-2 leading-relaxed">A Zaffenate Soldas Especiais
+                                    atua no segmento de soldagem industrial com foco em precisão, segurança e
+                                    durabilidade. Oferecemos soluções personalizadas para indústrias de diversos
+                                    setores, utilizando técnicas avançadas de soldagem TIG, MIG e eletrodo revestido.
+                                </p>
+                                <p
+                                    class="text-lg font-bold mt-4 text-[#074b88] group-hover:text-blue-900 flex items-center gap-2">
+                                    Ver galeria completa <iconify-icon icon="mdi:arrow-right" width="20"></iconify-icon>
+                                </p>
                             </div>
                         </div>
-
                     </div>
 
-                <!-- ===== Fim Sobre ===== -->
-
-                <div class="mt-10 flex gap-2">
-                    <a href="https://wa.me/5541997766152" target="_blank" rel="noopener" class="bg-[#118CFF] text-white p-2 rounded hover:brightness-95 transition-all">Faça um Orçamento</a>
-                    <a href="https://wa.me/5541997766152" target="_blank" rel="noopener" class="bg-[#1a7b43] text-white p-2 rounded hover:brightness-95 transition-all flex gap-2 items-center"><iconify-icon icon="ic:baseline-whatsapp" width="28" height="28" style="color: #fefdfd"></iconify-icon> Whatsapp</a>
-                </div>
-
-                <!-- ===== Começo Avaliações Google ===== -->
-
-                <div id="4" class="mt-20 w-full max-w-[900px] px-3">
-                    <div class="text-center">
-                        <h2 class="text-3xl font-bold">Avaliações dos Clientes</h2>
-                        <p class="opacity-60 mt-2">Veja o que dizem sobre a Zaffenate no Google</p>
-                    </div>
-
-                    <script defer async src='https://cdn.trustindex.io/loader.js?25acf6874652712ae4168dfc5fb'></script>
-
-                    <div class="flex justify-center mt-8">
-                        <a id="google-reviews-cta" href="https://www.google.com/search?q=Zaffenate+Soldas+Especiais+%26+Serralheria" target="_blank" rel="noopener" class="bg-[#118CFF] text-white p-2 rounded hover:brightness-95 transition-all">Avalie-nos no Google</a>
-                    </div>
-                </div>
-
-                <!-- ===== Fim Avaliações Google ===== -->
-
-                <!-- ===== Começo FAQ ===== -->
-
-                <div id="5" class="mt-20 w-full max-w-[800px] px-3">
-                    <div class="text-center">
-                        <h2 class="text-3xl font-bold">Perguntas Frequentes sobre Solda e Serralheria</h2>
-                        <p class="opacity-60 mt-2">Tire suas dúvidas sobre soldagem industrial, solda especial e os serviços da Zaffenate</p>
-                    </div>
-
-                    <div class="mt-10 flex flex-col">
-
-                        <details class="group border-b py-4">
-                            <summary class="flex justify-between items-center gap-4 cursor-pointer font-bold text-[18px] list-none [&::-webkit-details-marker]:hidden">
-                                Qual a diferença entre solda MIG e solda TIG?
-                                <iconify-icon icon="mdi:chevron-down" width="24" height="24" class="shrink-0 transition-transform group-open:rotate-180"></iconify-icon>
-                            </summary>
-                            <p class="mt-3 opacity-80">A solda MIG usa um arame contínuo como eletrodo e é mais rápida, indicada para grandes volumes e aço carbono. Já a solda TIG utiliza um eletrodo de tungstênio e oferece acabamento mais preciso e limpo, sendo ideal para aço inox, alumínio e peças que exigem alta qualidade estética e estrutural.</p>
-                        </details>
-
-                        <details class="group border-b py-4">
-                            <summary class="flex justify-between items-center gap-4 cursor-pointer font-bold text-[18px] list-none [&::-webkit-details-marker]:hidden">
-                                O que é soldagem industrial e quando ela é necessária?
-                                <iconify-icon icon="mdi:chevron-down" width="24" height="24" class="shrink-0 transition-transform group-open:rotate-180"></iconify-icon>
-                            </summary>
-                            <p class="mt-3 opacity-80">Soldagem industrial é a união de peças metálicas com técnicas e equipamentos voltados para a indústria, garantindo resistência, segurança e durabilidade. É necessária em estruturas metálicas, máquinas, equipamentos, tubulações e qualquer projeto que exija solda especializada dentro de normas técnicas.</p>
-                        </details>
-
-                        <details class="group border-b py-4">
-                            <summary class="flex justify-between items-center gap-4 cursor-pointer font-bold text-[18px] list-none [&::-webkit-details-marker]:hidden">
-                                A Zaffenate trabalha com quais materiais?
-                                <iconify-icon icon="mdi:chevron-down" width="24" height="24" class="shrink-0 transition-transform group-open:rotate-180"></iconify-icon>
-                            </summary>
-                            <p class="mt-3 opacity-80">Trabalhamos com aço inox, alumínio e aço carbono, aplicando as técnicas de solda TIG, MIG e eletrodo revestido conforme a necessidade de cada projeto, residencial, comercial ou industrial.</p>
-                        </details>
-
-                        <details class="group border-b py-4">
-                            <summary class="flex justify-between items-center gap-4 cursor-pointer font-bold text-[18px] list-none [&::-webkit-details-marker]:hidden">
-                                A Zaffenate faz soldas especiais para indústrias?
-                                <iconify-icon icon="mdi:chevron-down" width="24" height="24" class="shrink-0 transition-transform group-open:rotate-180"></iconify-icon>
-                            </summary>
-                            <p class="mt-3 opacity-80">Sim. A soldagem especial e industrial é uma das principais especialidades da Zaffenate, com foco em precisão, segurança e durabilidade para atender diferentes setores industriais.</p>
-                        </details>
-
-                        <details class="group border-b py-4">
-                            <summary class="flex justify-between items-center gap-4 cursor-pointer font-bold text-[18px] list-none [&::-webkit-details-marker]:hidden">
-                                É possível soldar alumínio e aço inox sem perder a resistência da peça?
-                                <iconify-icon icon="mdi:chevron-down" width="24" height="24" class="shrink-0 transition-transform group-open:rotate-180"></iconify-icon>
-                            </summary>
-                            <p class="mt-3 opacity-80">Sim, desde que a solda seja feita com a técnica correta, geralmente TIG, e por profissionais experientes. Isso evita deformações, trincas e perda de resistência mecânica do material.</p>
-                        </details>
-
-                        <details class="group border-b py-4">
-                            <summary class="flex justify-between items-center gap-4 cursor-pointer font-bold text-[18px] list-none [&::-webkit-details-marker]:hidden">
-                                Quanto tempo leva para receber um orçamento de solda ou serralheria?
-                                <iconify-icon icon="mdi:chevron-down" width="24" height="24" class="shrink-0 transition-transform group-open:rotate-180"></iconify-icon>
-                            </summary>
-                            <p class="mt-3 opacity-80">O prazo varia conforme a complexidade do projeto. Entre em contato pelo WhatsApp com fotos e detalhes do serviço para recebermos um orçamento rápido e personalizado.</p>
-                        </details>
-
-                        <details class="group border-b py-4">
-                            <summary class="flex justify-between items-center gap-4 cursor-pointer font-bold text-[18px] list-none [&::-webkit-details-marker]:hidden">
-                                A Zaffenate atende projetos residenciais e comerciais, além de industriais?
-                                <iconify-icon icon="mdi:chevron-down" width="24" height="24" class="shrink-0 transition-transform group-open:rotate-180"></iconify-icon>
-                            </summary>
-                            <p class="mt-3 opacity-80">Sim. Além da soldagem industrial e especial, atendemos projetos residenciais e comerciais de serralheria, como portões, grades, corrimãos e estruturas metálicas.</p>
-                        </details>
-
-                        <details class="group border-b py-4">
-                            <summary class="flex justify-between items-center gap-4 cursor-pointer font-bold text-[18px] list-none [&::-webkit-details-marker]:hidden">
-                                Como solicitar um orçamento com a Zaffenate?
-                                <iconify-icon icon="mdi:chevron-down" width="24" height="24" class="shrink-0 transition-transform group-open:rotate-180"></iconify-icon>
-                            </summary>
-                            <p class="mt-3 opacity-80">Basta entrar em contato pelo WhatsApp (41) 9 9776-6152 ou pelo e-mail zaffenatesoldas.contato@gmail.com com as informações do seu projeto.</p>
-                        </details>
-
-                    </div>
-                </div>
-
-                <!-- ===== Fim FAQ ===== -->
-
-                <div class="mt-10 flex gap-2">
-                    <a href="https://wa.me/5541997766152" target="_blank" rel="noopener" class="bg-[#118CFF] text-white p-2 rounded hover:brightness-95 transition-all">Faça um Orçamento</a>
-                    <a href="https://wa.me/5541997766152" target="_blank" rel="noopener" class="bg-[#1a7b43] text-white p-2 rounded hover:brightness-95 transition-all flex gap-2 items-center"><iconify-icon icon="ic:baseline-whatsapp" width="28" height="28" style="color: #fefdfd"></iconify-icon> Whatsapp</a>
-                </div>
-
-                <!-- ===== Começo Local ===== -->
-
-                <footer class="bg-[#d5d5d5] w-full h-max p-5">
-
-                    <div class="p-3 flex lg:flex-row flex-col items-center text-center lg:items-start lg:text-left gap-2">
-                        <img src="./src/logo2.webp" width="200" height="200" alt="Logo Zaffenate Soldas Especiais & Serralheria">
-                        <div class="items-center mt-10">
-                            <p class="text-2xl">Zaffenate Soldas Especiais</p>
-                            <p class="w-[250px] font-bold opacity-50">Todos direitos reservados a CNPJ 56.889.903/0001-20</p>
+                    <div onclick="openModal(1)"
+                        class="group h-max w-full max-w-[800px] bg-gradient-to-r from-[#0986f3] to-white border border-gray-200 rounded-xl flex p-6 cursor-pointer shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex items-center">
+                            <img class="w-[200px] h-[170px] object-cover rounded-lg shadow-md lg:block hidden group-hover:scale-105 transition-transform duration-300"
+                                src="./src/2.webp" width="266" height="252" alt="Serralheria personalizada Zaffenate"
+                                loading="lazy">
+                            <div class="lg:ml-8 overflow-auto">
+                                <h3 class="text-xl lg:text-2xl font-black tracking-[3px] text-gray-900 drop-shadow-sm">
+                                    SERRALHERIA</h3>
+                                <p class="text-base text-gray-800 mt-2 leading-relaxed">Oferecemos serviços completos em
+                                    serralheria personalizada, desenvolvendo soluções sob medida para projetos
+                                    residenciais, comerciais e industriais. Produzimos portões, grades, corrimãos,
+                                    estruturas metálicas, mezaninos unindo funcionalidade, estética e segurança.</p>
+                                <p
+                                    class="text-lg font-bold mt-4 text-[#074b88] group-hover:text-blue-900 flex items-center gap-2">
+                                    Ver galeria completa <iconify-icon icon="mdi:arrow-right" width="20"></iconify-icon>
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                <!-- ===== Fim Local ===== -->
+                    <div id="popup"
+                        class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden flex justify-center items-center p-5 z-[100] transition-opacity duration-300 opacity-0">
+                        <div id="popup-content"
+                            class="bg-white p-6 rounded-2xl max-w-4xl w-full shadow-2xl relative flex flex-col items-center transform scale-95 transition-transform duration-300">
+                            <button onclick="closeModal()"
+                                class="absolute -top-4 -right-4 bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full flex justify-center items-center text-2xl shadow-lg transition-transform hover:scale-110 z-50"
+                                aria-label="Fechar galeria">&times;</button>
+                            <h2 id="popup-title"
+                                class="text-2xl font-black text-center mb-5 text-gray-800 uppercase tracking-wide"></h2>
 
-                </footer>
+                            <div
+                                class="relative w-full flex justify-center items-center group/modal bg-gray-100 rounded-lg p-2 min-h-[300px]">
+                                <button onclick="prevImage()"
+                                    class="absolute left-2 lg:left-4 text-3xl bg-white/90 hover:bg-white text-black w-12 h-12 flex items-center justify-center rounded-full shadow-md transition-all opacity-70 hover:opacity-100 lg:opacity-0 lg:group-hover/modal:opacity-100 z-10"
+                                    aria-label="Foto anterior">&#10094;</button>
+
+                                <img id="popup-image"
+                                    class="w-full h-auto max-h-[65vh] object-contain rounded drop-shadow-md"
+                                    alt="Foto do trabalho realizado pela Zaffenate">
+
+                                <button onclick="nextImage()"
+                                    class="absolute right-2 lg:right-4 text-3xl bg-white/90 hover:bg-white text-black w-12 h-12 flex items-center justify-center rounded-full shadow-md transition-all opacity-70 hover:opacity-100 lg:opacity-0 lg:group-hover/modal:opacity-100 z-10"
+                                    aria-label="Próxima foto">&#10095;</button>
+                            </div>
+                            <p id="popup-counter" class="mt-4 font-semibold text-gray-500"></p>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 flex flex-wrap justify-center gap-4">
+                        <a href="https://wa.me/5541997766152" target="_blank" rel="noopener"
+                            class="bg-[#118CFF] font-bold text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">Faça
+                            um Orçamento</a>
+                        <a href="https://wa.me/5541997766152" target="_blank" rel="noopener"
+                            class="bg-[#25D366] font-bold text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-all flex gap-2 items-center"><iconify-icon
+                                icon="ic:baseline-whatsapp" width="24" height="24"></iconify-icon> Chamar no
+                            Whatsapp</a>
+                    </div>
+
+                    <div id="3" class="mt-24 w-full max-w-6xl">
+                        <div class="bg-gradient-to-b from-[#f0f0f0] to-[#e1e1e1] rounded-2xl shadow-xl overflow-hidden">
+                            <div class="flex lg:flex-row flex-col gap-10 lg:p-12 p-8 items-center lg:items-start">
+                                <img src="./src/four.webp" width="701" height="673"
+                                    class="lg:w-[400px] w-full max-w-[300px] rounded-lg shadow-md object-cover hover:scale-105 transition-transform duration-500"
+                                    alt="Estrutura metálica produzida pela Zaffenate" loading="lazy">
+
+                                <div class="flex flex-col lg:text-left text-center">
+                                    <h2 class="text-3xl lg:text-4xl font-black text-gray-900 mb-6">Sobre a <span
+                                            class="text-[#118CFF]">Zaffenate Soldas</span></h2>
+                                    <p class="text-gray-700 text-lg leading-relaxed mb-4">A Zaffenate Soldas Especiais &
+                                        Serralheria é uma empresa especializada em soluções metálicas de alta qualidade,
+                                        atendendo clientes dos setores residencial, comercial e industrial. Com anos de
+                                        experiência no mercado, nos destacamos pela excelência em soldagem especial e
+                                        serralheria personalizada, sempre priorizando precisão, segurança e
+                                        durabilidade.</p>
+                                    <p class="text-gray-700 text-lg leading-relaxed mb-6">Utilizamos técnicas avançadas,
+                                        como solda TIG, MIG e eletrodo revestido, além de trabalhar com materiais como
+                                        aço inox, alumínio e aço carbono, garantindo resistência e acabamento impecável.
+                                    </p>
+                                    <blockquote
+                                        class="border-l-4 border-[#118CFF] pl-4 italic font-bold text-xl text-gray-800">
+                                        "Zaffenate Soldas Especiais & Serralheria – Transformando ideias em estruturas
+                                        metálicas sólidas e confiáveis!"</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="4" class="mt-24 w-full max-w-[1200px] px-4">
+                        <div class="text-center mb-10">
+                            <h2 class="text-3xl lg:text-4xl font-black text-gray-900">Avaliações dos Clientes</h2>
+                            <p class="opacity-70 mt-3 text-lg">Veja o que dizem sobre a Zaffenate no Google</p>
+                        </div>
+
+                        <div class="mt-5 bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                            <script defer async
+                                src='https://cdn.trustindex.io/loader.js?25acf6874652712ae4168dfc5fb'></script>
+                        </div>
+
+                        <div class="flex justify-center mt-10">
+                            <a id="google-reviews-cta"
+                                href="https://www.google.com/search?q=Zaffenate+Soldas+Especiais+%26+Serralheria"
+                                target="_blank" rel="noopener"
+                                class="bg-white border-2 border-[#118CFF] text-[#118CFF] font-bold px-8 py-3 rounded-lg shadow hover:bg-[#118CFF] hover:text-white transition-all duration-300">Deixe
+                                sua Avaliação no Google</a>
+                        </div>
+                    </div>
+
+                    <div id="5" class="mt-24 w-full max-w-[800px] px-4 mb-20">
+                        <div class="text-center mb-10">
+                            <h2 class="text-3xl lg:text-4xl font-black text-gray-900">Perguntas Frequentes</h2>
+                            <p class="opacity-70 mt-3 text-lg">Tire suas dúvidas sobre soldagem industrial e os serviços
+                                da Zaffenate</p>
+                        </div>
+
+                        <div class="flex flex-col bg-white rounded-xl shadow-lg p-6 lg:p-8 border border-gray-100">
+
+                            <details class="group border-b border-gray-200 py-5">
+                                <summary
+                                    class="flex justify-between items-center gap-4 cursor-pointer font-bold text-lg text-gray-800 list-none [&::-webkit-details-marker]:hidden hover:text-[#118CFF] transition-colors">
+                                    Qual a diferença entre solda MIG e solda TIG?
+                                    <iconify-icon icon="mdi:chevron-down" width="28" height="28"
+                                        class="shrink-0 transition-transform duration-300 group-open:rotate-180 text-[#118CFF]"></iconify-icon>
+                                </summary>
+                                <p class="mt-4 text-gray-600 leading-relaxed animate-fade-in-up">A solda MIG usa um
+                                    arame contínuo como eletrodo e é mais rápida, indicada para grandes volumes e aço
+                                    carbono. Já a solda TIG utiliza um eletrodo de tungstênio e oferece acabamento mais
+                                    preciso e limpo, sendo ideal para aço inox, alumínio e peças que exigem alta
+                                    qualidade estética e estrutural.</p>
+                            </details>
+
+                            <details class="group border-b border-gray-200 py-5">
+                                <summary
+                                    class="flex justify-between items-center gap-4 cursor-pointer font-bold text-lg text-gray-800 list-none [&::-webkit-details-marker]:hidden hover:text-[#118CFF] transition-colors">
+                                    O que é soldagem industrial e quando ela é necessária?
+                                    <iconify-icon icon="mdi:chevron-down" width="28" height="28"
+                                        class="shrink-0 transition-transform duration-300 group-open:rotate-180 text-[#118CFF]"></iconify-icon>
+                                </summary>
+                                <p class="mt-4 text-gray-600 leading-relaxed">Soldagem industrial é a união de peças
+                                    metálicas com técnicas e equipamentos voltados para a indústria, garantindo
+                                    resistência, segurança e durabilidade. É necessária em estruturas metálicas,
+                                    máquinas, equipamentos, tubulações e qualquer projeto que exija solda especializada
+                                    dentro de normas técnicas.</p>
+                            </details>
+
+                            <details class="group border-b border-gray-200 py-5">
+                                <summary
+                                    class="flex justify-between items-center gap-4 cursor-pointer font-bold text-lg text-gray-800 list-none [&::-webkit-details-marker]:hidden hover:text-[#118CFF] transition-colors">
+                                    A Zaffenate trabalha com quais materiais?
+                                    <iconify-icon icon="mdi:chevron-down" width="28" height="28"
+                                        class="shrink-0 transition-transform duration-300 group-open:rotate-180 text-[#118CFF]"></iconify-icon>
+                                </summary>
+                                <p class="mt-4 text-gray-600 leading-relaxed">Trabalhamos com aço inox, alumínio e aço
+                                    carbono, aplicando as técnicas de solda TIG, MIG e eletrodo revestido conforme a
+                                    necessidade de cada projeto, residencial, comercial ou industrial.</p>
+                            </details>
+
+                            <details class="group border-b border-gray-200 py-5">
+                                <summary
+                                    class="flex justify-between items-center gap-4 cursor-pointer font-bold text-lg text-gray-800 list-none [&::-webkit-details-marker]:hidden hover:text-[#118CFF] transition-colors">
+                                    A Zaffenate faz soldas especiais para indústrias?
+                                    <iconify-icon icon="mdi:chevron-down" width="28" height="28"
+                                        class="shrink-0 transition-transform duration-300 group-open:rotate-180 text-[#118CFF]"></iconify-icon>
+                                </summary>
+                                <p class="mt-4 text-gray-600 leading-relaxed">Sim. A soldagem especial e industrial é
+                                    uma das principais especialidades da Zaffenate, com foco em precisão, segurança e
+                                    durabilidade para atender diferentes setores industriais.</p>
+                            </details>
+
+                            <details class="group border-b border-gray-200 py-5">
+                                <summary
+                                    class="flex justify-between items-center gap-4 cursor-pointer font-bold text-lg text-gray-800 list-none [&::-webkit-details-marker]:hidden hover:text-[#118CFF] transition-colors">
+                                    Quanto tempo leva para receber um orçamento?
+                                    <iconify-icon icon="mdi:chevron-down" width="28" height="28"
+                                        class="shrink-0 transition-transform duration-300 group-open:rotate-180 text-[#118CFF]"></iconify-icon>
+                                </summary>
+                                <p class="mt-4 text-gray-600 leading-relaxed">O prazo varia conforme a complexidade do
+                                    projeto. Entre em contato pelo WhatsApp com fotos e detalhes do serviço para
+                                    recebermos um orçamento rápido e personalizado.</p>
+                            </details>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#1f2937] text-white w-full border-t-[6px] border-[#118CFF]">
+        <div class="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <div class="flex flex-col gap-4">
+                    <img src="./src/logo2.webp" width="180" class=" p-2 rounded-lg" alt="Logo Zaffenate">
+                    <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+                        Especialistas em soldagem industrial, estruturas metálicas e serralheria sob medida. Mais de 28
+                        anos entregando qualidade, segurança e precisão.
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <h3 class="text-xl font-bold text-white mb-3">Navegação</h3>
+                    <a href="#"
+                        class="text-gray-400 hover:text-[#118CFF] transition-colors flex items-center gap-2"><iconify-icon
+                            icon="mdi:chevron-right"></iconify-icon> Início</a>
+                    <a href="#" onclick="scrollToSection('2')"
+                        class="text-gray-400 hover:text-[#118CFF] transition-colors flex items-center gap-2"><iconify-icon
+                            icon="mdi:chevron-right"></iconify-icon> Nossos Serviços</a>
+                    <a href="#" onclick="scrollToSection('3')"
+                        class="text-gray-400 hover:text-[#118CFF] transition-colors flex items-center gap-2"><iconify-icon
+                            icon="mdi:chevron-right"></iconify-icon> Sobre a Empresa</a>
+                    <a href="#" onclick="scrollToSection('4')"
+                        class="text-gray-400 hover:text-[#118CFF] transition-colors flex items-center gap-2"><iconify-icon
+                            icon="mdi:chevron-right"></iconify-icon> Avaliações</a>
+                    <a href="#" onclick="scrollToSection('5')"
+                        class="text-gray-400 hover:text-[#118CFF] transition-colors flex items-center gap-2"><iconify-icon
+                            icon="mdi:chevron-right"></iconify-icon> Dúvidas Frequentes</a>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <h3 class="text-xl font-bold text-white mb-3">Contato</h3>
+                    <a href="https://wa.me/5541997766152" target="_blank"
+                        class="text-gray-400 hover:text-[#25D366] transition-colors flex items-center gap-3">
+                        <iconify-icon icon="ic:baseline-whatsapp" width="24"></iconify-icon> (41) 9 9776-6152
+                    </a>
+                    <a href="mailto:zaffenatesoldas.contato@gmail.com"
+                        class="text-gray-400 hover:text-white transition-colors flex items-center gap-3">
+                        <iconify-icon icon="ic:outline-email" width="24"></iconify-icon>
+                        zaffenatesoldas.contato@gmail.com
+                    </a>
+                    <p class="text-gray-400 flex items-start gap-3 mt-2">
+                        <iconify-icon icon="mdi:map-marker" width="24" class="shrink-0 text-blue-500"></iconify-icon>
+                        R. Cândido Mendes 931 - Estados, Fazenda Rio Grande - PR
+                    </p>
+                </div>
+
+                <a target="_blank" href="https://www.havengg.com.br">
+                    <div class="flex flex-col lg:mt-62 lg:ml-36">
+                        Powered By
+                        <img src="./src/haven.png" width="120px" />
+                    </div>
+
+                </a>
 
             </div>
 
+            <div
+                class="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 Zaffenate Soldas Especiais & Serralheria. Todos os direitos reservados.
+                </p>
+                <p class="text-gray-500 text-sm font-bold">
+                    CNPJ: 56.889.903/0001-20
+                </p>
+            </div>
         </div>
-    </section>
-    </main>
+    </footer>
 
     <script>
+        // Array de imagens para o Carrossel do Hero
+        const heroImages = [
+            "./src/bg.webp",
+            "./src/1.webp", // Coloque as imagens reais de fundo que deseja rotacionar aqui
+            "./src/2.webp"
+        ];
+        let currentBgIndex = 0;
+        const heroSection = document.getElementById('hero-section');
+
+        // Função de carrossel de fundo a cada 5 segundos
+        if (heroImages.length > 1) {
+            setInterval(() => {
+                currentBgIndex = (currentBgIndex + 1) % heroImages.length;
+                heroSection.style.backgroundImage = `url('${heroImages[currentBgIndex]}')`;
+            }, 5000);
+        }
+
+        // Lógica do Modal
         const items = [
             {
                 title: "SOLDAGEM INDUSTRIAL",
@@ -437,6 +547,12 @@
 
         let currentGallery = [];
         let currentIndex = 0;
+        const popup = document.getElementById("popup");
+        const popupContent = document.getElementById("popup-content");
+
+        function updateCounter() {
+            document.getElementById("popup-counter").innerText = `Imagem ${currentIndex + 1} de ${currentGallery.length}`;
+        }
 
         function openModal(index) {
             document.getElementById("popup-title").innerText = items[index].title;
@@ -444,41 +560,73 @@
             currentIndex = 0;
             document.getElementById("popup-image").src = currentGallery[currentIndex];
             document.getElementById("popup-image").alt = items[index].title + " - foto " + (currentIndex + 1);
-            document.getElementById("popup").classList.remove("hidden");
+            updateCounter();
+
+            // Exibir com transição
+            popup.classList.remove("hidden");
+            // Pequeno delay para a classe de opacidade atuar
+            setTimeout(() => {
+                popup.classList.remove("opacity-0");
+                popupContent.classList.remove("scale-95");
+                popupContent.classList.add("scale-100");
+            }, 10);
         }
 
         function closeModal() {
-            document.getElementById("popup").classList.add("hidden");
+            popup.classList.add("opacity-0");
+            popupContent.classList.remove("scale-100");
+            popupContent.classList.add("scale-95");
+            setTimeout(() => {
+                popup.classList.add("hidden");
+            }, 300); // tempo bate com a duração da transição do tailwind
         }
+
+        // Fechar clicando fora do modal
+        popup.addEventListener('click', function (e) {
+            if (e.target === popup) {
+                closeModal();
+            }
+        });
 
         function prevImage() {
             if (currentIndex > 0) {
                 currentIndex--;
-                document.getElementById("popup-image").src = currentGallery[currentIndex];
+            } else {
+                currentIndex = currentGallery.length - 1; // loop
             }
+            document.getElementById("popup-image").src = currentGallery[currentIndex];
+            updateCounter();
         }
 
         function nextImage() {
             if (currentIndex < currentGallery.length - 1) {
                 currentIndex++;
-                document.getElementById("popup-image").src = currentGallery[currentIndex];
+            } else {
+                currentIndex = 0; // loop
             }
+            document.getElementById("popup-image").src = currentGallery[currentIndex];
+            updateCounter();
         }
+
+        // Suporte para teclas do teclado na galeria
+        document.addEventListener('keydown', function (e) {
+            if (!popup.classList.contains('hidden')) {
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'Escape') closeModal();
+            }
+        });
 
         function scrollToSection(id) {
             const section = document.getElementById(id);
             if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
+                // Subtrai o offset do header fixo (100px aprox)
+                const y = section.getBoundingClientRect().top + window.scrollY - 110;
+                window.scrollTo({ top: y, behavior: 'smooth' });
             }
         }
     </script>
 
-    <!-- ===== Widget de Avaliações do Google =====
-         1) Crie uma API Key no Google Cloud Console com a "Maps JavaScript API" ativada.
-         2) Restrinja a chave (HTTP referrers) para "https://www.zaffenate.com.br/*".
-         3) Pegue o Place ID da empresa no Google Maps.
-         4) Cole os dois valores abaixo. Enquanto não forem preenchidos, avaliações
-            de exemplo são exibidas no lugar, para a seção nunca ficar vazia. -->
     <script>
         const GOOGLE_PLACES_API_KEY = "AIzaSyDx26TJHgN2eJeVW48ZVSVx7ef1p2FESXI";
         const GOOGLE_PLACE_ID = "ChIJZyW1SQBV3JQRPzcQgoPhbfY";
@@ -515,13 +663,18 @@
             const loading = document.getElementById("google-reviews-loading");
             if (loading) loading.remove();
 
-            document.getElementById("google-reviews-summary").innerHTML = `
-                <div class="flex">${buildStars(5)}</div>
-                <p class="opacity-60 text-[14px]">Avaliações em destaque (configure a integração para exibir avaliações reais do Google)</p>
-            `;
+            const summary = document.getElementById("google-reviews-summary");
+            if (summary) {
+                summary.innerHTML = `
+                    <div class="flex">${buildStars(5)}</div>
+                    <p class="opacity-60 text-[14px]">Avaliações em destaque (configure a integração para exibir avaliações reais do Google)</p>
+                `;
+            }
 
-            document.getElementById("google-reviews-container").innerHTML =
-                fallbackReviews.map(r => reviewCard(r.author, r.rating, r.text)).join("");
+            const container = document.getElementById("google-reviews-container");
+            if (container) {
+                container.innerHTML = fallbackReviews.map(r => reviewCard(r.author, r.rating, r.text)).join("");
+            }
         }
 
         async function initGoogleReviews() {
@@ -534,15 +687,19 @@
                 const loading = document.getElementById("google-reviews-loading");
                 if (loading) loading.remove();
 
-                document.getElementById("google-reviews-summary").innerHTML = `
-                    <p class="text-3xl font-bold">${place.rating ?? "5"}</p>
-                    <div class="flex">${buildStars(place.rating ?? 5)}</div>
-                    <p class="opacity-60 text-[14px]">${place.userRatingCount ?? 0} avaliações no Google</p>
-                `;
+                const summary = document.getElementById("google-reviews-summary");
+                if (summary) {
+                    summary.innerHTML = `
+                        <p class="text-3xl font-bold">${place.rating ?? "5"}</p>
+                        <div class="flex">${buildStars(place.rating ?? 5)}</div>
+                        <p class="opacity-60 text-[14px]">${place.userRatingCount ?? 0} avaliações no Google</p>
+                    `;
+                }
 
                 const reviews = (place.reviews || []).slice(0, 6);
-                if (reviews.length) {
-                    document.getElementById("google-reviews-container").innerHTML = reviews.map(r =>
+                const container = document.getElementById("google-reviews-container");
+                if (reviews.length && container) {
+                    container.innerHTML = reviews.map(r =>
                         reviewCard(
                             r.authorAttribution?.displayName || "Cliente Google",
                             r.rating || 5,
@@ -555,7 +712,8 @@
                 }
 
                 if (place.googleMapsURI) {
-                    document.getElementById("google-reviews-cta").href = place.googleMapsURI;
+                    const cta = document.getElementById("google-reviews-cta");
+                    if (cta) cta.href = place.googleMapsURI;
                 }
             } catch (e) {
                 console.warn("Não foi possível carregar as avaliações do Google:", e);
@@ -582,4 +740,5 @@
     </script>
 
 </body>
+
 </html>
